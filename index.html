@@ -1,139 +1,124 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MP Store - Daily Needs Deals</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MP Store - Best Amazon Products</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+    }
+    .header {
+      background-color: #007bff;
+      padding: 20px;
+      color: white;
+      text-align: center;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .product-card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      padding: 15px;
+      text-align: center;
+    }
+    .product-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: contain;
+    }
+    .product-card h3 {
+      font-size: 1.1em;
+      margin: 10px 0;
+    }
+    .product-card p {
+      color: #555;
+      margin: 5px 0;
+    }
+    .buy-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+    .buy-btn:hover {
+      background-color: #218838;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>🛒 MP Store - Top Daily Needs Products</h1>
-    <p>Discover the best-rated daily essentials. Click "Buy Now" to shop on Amazon!</p>
-  </header>
-  <main class="product-grid">
 
-    <div class="product-card">
-  <img src="https://plus.unsplash.com/premium_photo-1664392147011-2a720f214e01?q=80&w=878&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Product 1">
-  <h3>boAt Rockerz 113</h3>
-  <p>⭐ 4.3 / 5 | ₹1019</p>
-  <a href="https://www.amazon.in/dp/B0B4FCJWZQ?tag=yourstoreid-21" target="_blank">
-    <button>Buy Now</button>
-  </a>
-</div>
+  <div class="header">
+    <h1>🛍 MP Store - Best Amazon Products 2025</h1>
+    <p>Top-rated and best-selling items for your daily needs</p>
+  </div>
 
+  <div class="container">
+
+    <!-- Product 1 -->
     <div class="product-card">
-      <img src="https://m.media-amazon.com/images/I/71SJv6Lop-L._SX522_.jpg" alt="Product 1" />
-      <h2>Product Title 1</h2>
-      <p>⭐ 4.2 / 5 | ₹1009</p>
-      <a href="https://www.amazon.in/Airdopes-131-Technology-Bluetooth-Immersive/dp/B088FKCD4J?pd_rd_w=YpmZi&content-id=amzn1.sym.7edc8fe7-49c8-4837-acf4-779a8e8647e2&pf_rd_p=7edc8fe7-49c8-4837-acf4-779a8e8647e2&pf_rd_r=ATJ2830CTWB876P8JHWZ&pd_rd_wg=Odsii&pd_rd_r=aa6d575a-89b2-4758-be13-9aa2bfd22de7&pd_rd_i=B088FKCD4J&th=1&linkCode=ll1&tag=mpstore07c-21&linkId=b760b3f1271fd09692de3988e425196f&language=en_IN&ref_=as_li_ss_tl" target="_blank">
-        <button>Buy Now</button>
-      </a>
+      <img src="https://m.media-amazon.com/images/I/51HBom8xz7L._SX679_.jpg" alt="boAt Airdopes 141">
+      <h3>boAt Airdopes 141</h3>
+      <p>⭐ 4.4 / 5 | ₹1299</p>
+      <a href="https://www.amazon.in/dp/B09LHC7J1J?tag=mpstore-21" class="buy-btn" target="_blank">Buy Now</a>
     </div>
-    
+
+    <!-- Product 2 -->
     <div class="product-card">
-      <img src="https://via.placeholder.com/150" alt="Product 2" />
-      <h2>Product Title 2</h2>
-      <p>⭐ 4.3 / 5 | ₹1019</p>
-      <a href="https://www.amazon.in/dp/B0XXXXX?tag=MPStore" target="_blank">
-        <button>Buy Now</button>
-      </a>
+      <img src="https://m.media-amazon.com/images/I/61LB+d0vheL._SX679_.jpg" alt="OnePlus Nord CE 3 Lite">
+      <h3>OnePlus Nord CE 3 Lite 5G</h3>
+      <p>⭐ 4.7 / 5 | ₹19999</p>
+      <a href="https://www.amazon.in/dp/B0BY8MCMLS?tag=mpstore-21" class="buy-btn" target="_blank">Buy Now</a>
     </div>
-    
+
+    <!-- Product 3 -->
     <div class="product-card">
-      <img src="https://via.placeholder.com/150" alt="Product 3" />
-      <h2>Product Title 3</h2>
-      <p>⭐ 4.4 / 5 | ₹1029</p>
-      <a href="https://www.amazon.in/dp/B0XXXXX?tag=MPStore" target="_blank">
-        <button>Buy Now</button>
-      </a>
+      <img src="https://m.media-amazon.com/images/I/51Lz1OjoQmL._SX679_.jpg" alt="Mi Smart Band 7">
+      <h3>Mi Smart Band 7</h3>
+      <p>⭐ 4.6 / 5 | ₹3499</p>
+      <a href="https://www.amazon.in/dp/B0B4FJZ4V8?tag=mpstore-21" class="buy-btn" target="_blank">Buy Now</a>
     </div>
-    
+
+    <!-- Product 4 -->
     <div class="product-card">
-      <img src="https://via.placeholder.com/150" alt="Product 4" />
-      <h2>Product Title 4</h2>
-      <p>⭐ 4.5 / 5 | ₹1039</p>
-      <a href="https://www.amazon.in/dp/B0XXXXX?tag=MPStore" target="_blank">
-        <button>Buy Now</button>
-      </a>
+      <img src="https://m.media-amazon.com/images/I/71aN3RStZ+L._SX679_.jpg" alt="Philips Air Fryer HD9252/90">
+      <h3>Philips Air Fryer HD9252/90</h3>
+      <p>⭐ 4.8 / 5 | ₹8999</p>
+      <a href="https://www.amazon.in/dp/B093BCVGBJ?tag=mpstore-21" class="buy-btn" target="_blank">Buy Now</a>
     </div>
-    
+
+    <!-- Product 5 -->
     <div class="product-card">
-      <img src="https://via.placeholder.com/150" alt="Product 5" />
-      <h2>Product Title 5</h2>
-      <p>⭐ 4.1 / 5 | ₹1049</p>
-      <a href="https://www.amazon.in/dp/B0XXXXX?tag=MPStore" target="_blank">
-        <button>Buy Now</button>
-      </a>
+      <img src="https://m.media-amazon.com/images/I/41lbKdyDIdL._SX679_.jpg" alt="Amazon Fire TV Stick 4K Max">
+      <h3>Amazon Fire TV Stick 4K Max</h3>
+      <p>⭐ 4.6 / 5 | ₹4599</p>
+      <a href="https://www.amazon.in/dp/B09MQ59XKL?tag=mpstore-21" class="buy-btn" target="_blank">Buy Now</a>
     </div>
-    
+
+    <!-- Product 6 -->
     <div class="product-card">
-      <img src="https://via.placeholder.com/150" alt="Product 6" />
-      <h2>Product Title 6</h2>
-      <p>⭐ 4.2 / 5 | ₹1059</p>
-      <a href="https://www.amazon.in/dp/B0XXXXX?tag=MPStore" target="_blank">
-        <button>Buy Now</button>
-      </a>
+      <img src="https://m.media-amazon.com/images/I/51pN18j9tBL._SX679_.jpg" alt="Kindle Paperwhite (11th Gen)">
+      <h3>Kindle Paperwhite (11th Gen)</h3>
+      <p>⭐ 4.7 / 5 | ₹13999</p>
+      <a href="https://www.amazon.in/dp/B08N3W4H4X?tag=mpstore-21" class="buy-btn" target="_blank">Buy Now</a>
     </div>
-    
-    <div class="product-card">
-      <img src="https://via.placeholder.com/150" alt="Product 7" />
-      <h2>Product Title 7</h2>
-      <p>⭐ 4.3 / 5 | ₹1069</p>
-      <a href="https://www.amazon.in/dp/B0XXXXX?tag=MPStore" target="_blank">
-        <button>Buy Now</button>
-      </a>
-    </div>
-    
-    <div class="product-card">
-      <img src="https://via.placeholder.com/150" alt="Product 8" />
-      <h2>Product Title 8</h2>
-      <p>⭐ 4.4 / 5 | ₹1079</p>
-      <a href="https://www.amazon.in/dp/B0XXXXX?tag=MPStore" target="_blank">
-        <button>Buy Now</button>
-      </a>
-    </div>
-    
-    <div class="product-card">
-      <img src="https://via.placeholder.com/150" alt="Product 9" />
-      <h2>Product Title 9</h2>
-      <p>⭐ 4.5 / 5 | ₹1089</p>
-      <a href="https://www.amazon.in/dp/B0XXXXX?tag=MPStore" target="_blank">
-        <button>Buy Now</button>
-      </a>
-    </div>
-    
-    <div class="product-card">
-      <img src="https://via.placeholder.com/150" alt="Product 10" />
-      <h2>Product Title 10</h2>
-      <p>⭐ 4.1 / 5 | ₹1099</p>
-      <a href="https://www.amazon.in/dp/B0XXXXX?tag=MPStore" target="_blank">
-        <button>Buy Now</button>
-      </a>
-    </div>
-    
-    <div class="product-card">
-      <img src="https://via.placeholder.com/150" alt="Product 11" />
-      <h2>Product Title 11</h2>
-      <p>⭐ 4.2 / 5 | ₹1109</p>
-      <a href="https://www.amazon.in/dp/B0XXXXX?tag=MPStore" target="_blank">
-        <button>Buy Now</button>
-      </a>
-    </div>
-    
-    <div class="product-card">
-      <img src="https://via.placeholder.com/150" alt="Product 12" />
-      <h2>Product Title 12</h2>
-      <p>⭐ 4.3 / 5 | ₹1119</p>
-      <a href="https://www.amazon.in/dp/B0XXXXX?tag=MPStore" target="_blank">
-        <button>Buy Now</button>
-      </a>
-    </div>
-    
-  </main>
-  <footer>
-    <p>© 2025 MP Store | Affiliate Links Used</p>
+
+  </div>
+
+  <footer style="text-align:center; padding:20px; font-size:14px;">
+    © 2025 MP Store | Affiliate Links Used | As an Amazon Associate, we earn from qualifying purchases.
   </footer>
+
 </body>
 </html>
