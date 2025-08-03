@@ -1,124 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MP Store - Best Amazon Products</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f2f2f2;
-      margin: 0;
-    }
-    .header {
-      background-color: #007bff;
-      padding: 20px;
-      color: white;
-      text-align: center;
-    }
-    .container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      padding: 20px;
-    }
-    .product-card {
-      background-color: white;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      padding: 15px;
-      text-align: center;
-    }
-    .product-card img {
-      width: 100%;
-      height: 200px;
-      object-fit: contain;
-    }
-    .product-card h3 {
-      font-size: 1.1em;
-      margin: 10px 0;
-    }
-    .product-card p {
-      color: #555;
-      margin: 5px 0;
-    }
-    .buy-btn {
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #28a745;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      text-decoration: none;
-    }
-    .buy-btn:hover {
-      background-color: #218838;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MP Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Custom styles can go here, but the layout is primarily handled by Tailwind CSS in index.html */
+        /* Add a subtle hover effect to the product cards */
+        .product-card {
+            transition: transform 0.2s ease-in-out;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Ensure the logo placeholder is replaced by the generated image */
+        #store-logo {
+            background-image: url('http://googleusercontent.com/image_generation_content/0');
+            background-size: cover;
+            background-position: center;
+            border-radius: 50%;
+        }
+    </style>
 </head>
-<body>
+<body class="bg-gray-100">
 
-  <div class="header">
-    <h1>🛍 MP Store - Best Amazon Products 2025</h1>
-    <p>Top-rated and best-selling items for your daily needs</p>
-  </div>
+    <header class="bg-white shadow-md p-4 sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <img src="https://via.placeholder.com/50" alt="MP Store Logo" class="h-12 w-12" id="store-logo">
+                <h1 class="text-3xl font-bold text-gray-800">MP Store</h1>
+            </div>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#" class="text-gray-600 hover:text-gray-900">Home</a></li>
+                    <li><a href="#products" class="text-gray-600 hover:text-gray-900">Products</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-gray-900">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-  <div class="container">
+    <main class="container mx-auto p-6">
+        <section class="text-center my-12">
+            <h2 class="text-4xl font-extrabold text-gray-800">Welcome to MP Store</h2>
+            <p class="text-lg text-gray-600 mt-4">Your one-stop shop for the best products online!</p>
+        </section>
 
-    <!-- Product 1 -->
-    <div class="product-card">
-      <img src="https://m.media-amazon.com/images/I/51HBom8xz7L._SX679_.jpg" alt="boAt Airdopes 141">
-      <h3>boAt Airdopes 141</h3>
-      <p>⭐ 4.4 / 5 | ₹1299</p>
-      <a href="https://www.amazon.in/dp/B09LHC7J1J?tag=mpstore-21" class="buy-btn" target="_blank">Buy Now</a>
-    </div>
+        <section id="products" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            </section>
+    </main>
 
-    <!-- Product 2 -->
-    <div class="product-card">
-      <img src="https://m.media-amazon.com/images/I/61LB+d0vheL._SX679_.jpg" alt="OnePlus Nord CE 3 Lite">
-      <h3>OnePlus Nord CE 3 Lite 5G</h3>
-      <p>⭐ 4.7 / 5 | ₹19999</p>
-      <a href="https://www.amazon.in/dp/B0BY8MCMLS?tag=mpstore-21" class="buy-btn" target="_blank">Buy Now</a>
-    </div>
+    <footer class="bg-gray-800 text-white p-6 text-center mt-12">
+        <p>&copy; 2025 MP Store. All rights reserved.</p>
+    </footer>
 
-    <!-- Product 3 -->
-    <div class="product-card">
-      <img src="https://m.media-amazon.com/images/I/51Lz1OjoQmL._SX679_.jpg" alt="Mi Smart Band 7">
-      <h3>Mi Smart Band 7</h3>
-      <p>⭐ 4.6 / 5 | ₹3499</p>
-      <a href="https://www.amazon.in/dp/B0B4FJZ4V8?tag=mpstore-21" class="buy-btn" target="_blank">Buy Now</a>
-    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const productsContainer = document.getElementById('products');
+            const products = [
+                {
+                    title: "Philips 750W Mixer Grinder",
+                    image: "https://m.media-amazon.com/images/I/71R3yL2LgWL._AC_SY200_.jpg",
+                    url: "https://www.amazon.in/Philips-HL7756-01-Mixer-Grinder/dp/B075S1W99M/",
+                    store: "Amazon"
+                },
+                {
+                    title: "Fire-Boltt Smartwatch",
+                    image: "https://rukminim2.flixcart.com/image/832/832/xif0q/smartwatch/c/o/e/-original-imagh2k63s7x7g84.jpeg",
+                    url: "https://www.flipkart.com/fire-boltt-rise-luxe-1-85-4-69-cm-display-bluetooth-calling-smartwatch/p/itm50b1d3d0f07b1",
+                    store: "Flipkart"
+                },
+                {
+                    title: "Jacquard Banarasi Saree",
+                    image: "https://images.meesho.com/images/products/67891820/vkh6d_512.webp",
+                    url: "https://www.meesho.com/most-selling-saree/p/4oyo4y",
+                    store: "Meesho"
+                },
+                {
+                    title: "Crompton Ameo Mixer Grinder",
+                    image: "https://m.media-amazon.com/images/I/61Nl5oYw6aL._AC_UL480_FMwebp_QL65_.jpg",
+                    url: "https://www.amazon.in/Crompton-Ameo-750-Watt-Mixer-Grinder/dp/B0C39912M4/",
+                    store: "Amazon"
+                },
+                {
+                    title: "boAt Storm Call Smartwatch",
+                    image: "https://rukminim2.flixcart.com/image/832/832/xif0q/smartwatch/j/w/3/-original-imagp4m6yhtggn5t.jpeg",
+                    url: "https://www.flipkart.com/boat-storm-call-w-4-29-cm-1-69-bt-calling-550-nits-brightness-smartwatch/p/itm4b293370e56fd",
+                    store: "Flipkart"
+                },
+                {
+                    title: "Designer Chiffon Saree",
+                    image: "https://images.meesho.com/images/products/60074251/w1t0r_512.webp",
+                    url: "https://www.meesho.com/designer-saree/pl/8dh",
+                    store: "Meesho"
+                },
+                {
+                    title: "Bosch 1000W Mixer Grinder",
+                    image: "https://m.media-amazon.com/images/I/61X-jC+T5wL._AC_UL480_FMwebp_QL65_.jpg",
+                    url: "https://www.amazon.in/Bosch-TrueMixx-Pro-MGM8842MIN-Mixer/dp/B08GGBG89T/",
+                    store: "Amazon"
+                },
+                {
+                    title: "NoiseFit Smartwatch",
+                    image: "https://rukminim2.flixcart.com/image/832/832/xif0q/smartwatch/w/v/k/-original-imagh2k63s7x7g84.jpeg",
+                    url: "https://www.flipkart.com/noisefit-halo-2-with-1-43-inch-amoled-display-bluetooth-calling-smartwatch/p/itm6c04f44760a5e",
+                    store: "Flipkart"
+                },
+                {
+                    title: "Printed Cotton Saree",
+                    image: "https://images.meesho.com/images/products/62491143/r5k0a_512.webp",
+                    url: "https://www.meesho.com/cotton-sarees/pl/3jh",
+                    store: "Meesho"
+                },
+                {
+                    title: "Lifelong 500W Mixer Grinder",
+                    image: "https://m.media-amazon.com/images/I/719FqR6uCXL._AC_UL480_FMwebp_QL65_.jpg",
+                    url: "https://www.amazon.in/Lifelong-Mixer-Grinder-Kitchen-LLMG23/dp/B07YFYX7L9/",
+                    store: "Amazon"
+                }
+            ];
 
-    <!-- Product 4 -->
-    <div class="product-card">
-      <img src="https://m.media-amazon.com/images/I/71aN3RStZ+L._SX679_.jpg" alt="Philips Air Fryer HD9252/90">
-      <h3>Philips Air Fryer HD9252/90</h3>
-      <p>⭐ 4.8 / 5 | ₹8999</p>
-      <a href="https://www.amazon.in/dp/B093BCVGBJ?tag=mpstore-21" class="buy-btn" target="_blank">Buy Now</a>
-    </div>
+            products.forEach(product => {
+                const card = document.createElement('div');
+                card.className = "product-card bg-white rounded-lg shadow-lg overflow-hidden";
 
-    <!-- Product 5 -->
-    <div class="product-card">
-      <img src="https://m.media-amazon.com/images/I/41lbKdyDIdL._SX679_.jpg" alt="Amazon Fire TV Stick 4K Max">
-      <h3>Amazon Fire TV Stick 4K Max</h3>
-      <p>⭐ 4.6 / 5 | ₹4599</p>
-      <a href="https://www.amazon.in/dp/B09MQ59XKL?tag=mpstore-21" class="buy-btn" target="_blank">Buy Now</a>
-    </div>
+                const image = document.createElement('img');
+                image.src = product.image;
+                image.alt = product.title;
+                image.className = "w-full h-48 object-cover";
 
-    <!-- Product 6 -->
-    <div class="product-card">
-      <img src="https://m.media-amazon.com/images/I/51pN18j9tBL._SX679_.jpg" alt="Kindle Paperwhite (11th Gen)">
-      <h3>Kindle Paperwhite (11th Gen)</h3>
-      <p>⭐ 4.7 / 5 | ₹13999</p>
-      <a href="https://www.amazon.in/dp/B08N3W4H4X?tag=mpstore-21" class="buy-btn" target="_blank">Buy Now</a>
-    </div>
+                const cardBody = document.createElement('div');
+                cardBody.className = "p-4";
 
-  </div>
+                const title = document.createElement('h3');
+                title.className = "text-xl font-semibold text-gray-800 truncate";
+                title.textContent = product.title;
 
-  <footer style="text-align:center; padding:20px; font-size:14px;">
-    © 2025 MP Store | Affiliate Links Used | As an Amazon Associate, we earn from qualifying purchases.
-  </footer>
+                const storeTag = document.createElement('span');
+                storeTag.className = "inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mt-2";
+                storeTag.textContent = product.store;
 
+                const buyButton = document.createElement('a');
+                buyButton.href = product.url;
+                buyButton.target = "_blank";
+                buyButton.className = "block text-center mt-4 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded";
+                buyButton.textContent = "Buy Now";
+
+                cardBody.appendChild(title);
+                cardBody.appendChild(storeTag);
+                cardBody.appendChild(buyButton);
+                card.appendChild(image);
+                card.appendChild(cardBody);
+                productsContainer.appendChild(card);
+            });
+        });
+    </script>
 </body>
 </html>
